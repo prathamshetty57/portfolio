@@ -1,0 +1,18 @@
+{{ }}- this in html gives flask the idea that the content inside the curly bracket is expression
+e.g.- {{4+5}} this will print 9 on webpage and not 4+5 
+for this the flask uses the jinja template engine under the hood. this helps in making the page more dynamic.
+this is used wth url parameter.
+
+'url for' module
+this helps to print the url of 
+print(url_for('static', filename='bolt.ico')) this will give the url for the file
+
+commands to export the python file for flask app and to on the debug mode
+$env:FLASK_APP = "hello"
+> flask run
+
+$env:FLASK_ENV = "development"
+> flask run
+
+MIME type(Multipurpose Internet Mail Extensions)
+Browsers use the MIME type, not the file extension, to determine how to process a URL, so it's important that web servers send the correct MIME type in the response's Content-Type header. If this is not correctly configured, browsers are likely to misinterpret the contents of files, sites will not work correctly, and downloaded files may be mishandled.
